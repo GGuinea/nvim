@@ -58,11 +58,5 @@ return require('packer').startup(function(use)
             require('gitsigns').setup()
         end
     }
-    use({
-        "rebelot/heirline.nvim",
-        config = function()
-            require("heirline").setup({
-            })
-        end
-    })
+    use({ "rebelot/heirline.nvim"})
 end)

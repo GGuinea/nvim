@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 -- Shorten function name
 local keymap = vim.keymap.set
 -- Silent keymap option
@@ -13,6 +12,9 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
+
+keymap("n", "<F6>", ":NeoTreeShow<CR>", opts)
+keymap("n", "<leader>nf", ":NeoTreeFocus<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)

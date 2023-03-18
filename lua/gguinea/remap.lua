@@ -13,8 +13,8 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<F6>", ":NeoTreeShow<CR>", opts)
-keymap("n", "<leader>nf", ":NeoTreeFocus<CR>", opts)
+keymap("n", "<F6>", ":Neotree toggle<CR>", opts)
+keymap("n", "<leader>nf", ":Neotree reveal<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)

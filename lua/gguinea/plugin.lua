@@ -58,5 +58,8 @@ return require('packer').startup(function(use)
             require('gitsigns').setup()
         end
     }
-    use({ "rebelot/heirline.nvim"})
+    use({ "rebelot/heirline.nvim" })
+    use { "akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end }
 end)

@@ -59,7 +59,9 @@ return require('packer').startup(function(use)
         end
     }
     use({ "rebelot/heirline.nvim" })
-    use { "akinsho/toggleterm.nvim", tag = '*', config = function()
-        require("toggleterm").setup()
-    end }
+    use { "akinsho/toggleterm.nvim", tag = '*' }
+    use({
+        "jose-elias-alvarez/null-ls.nvim",
+        requires = { "nvim-lua/plenary.nvim" },
+    })
 end)

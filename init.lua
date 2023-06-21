@@ -1,3 +1,3 @@
 require("gguinea")
-require("gguinea.init")
 require("gguinea.plugin")
+require("gguinea.init")

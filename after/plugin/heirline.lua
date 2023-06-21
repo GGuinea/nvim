@@ -434,18 +434,6 @@ local GitStatusline = {
     Align,
 }
 
-local TerminalStatusline = {
-    condition = function()
-        return conditions.buffer_matches { buftype = { "terminal" } }
-    end,
-    hl = { bg = "dark_red" },
-    { condition = conditions.is_active, ViMode, Space },
-    FileType,
-    Space,
-    TerminalName,
-    Align,
-}
-
 local StatusLines = {
     hl = function()
         if conditions.is_active() then
@@ -478,7 +466,6 @@ local StatusLines = {
     init = utils.pick_child_on_condition,
     GitStatusline,
     SpecialStatusline,
-    TerminalStatusline,
     InactiveStatusline,
     DefaultStatusline,
 }

@@ -47,3 +47,7 @@ keymap("v", "K", ":m '<-2<CR>gv=gv")
 keymap("n", "<leader>f", vim.lsp.buf.format)
 keymap("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
+keymap("n", "<leader>a", ":AerialToggle<CR>", opts)
+
+keymap("n", "<leader>tb", ":Gitsigns toggle_current_line_blame<CR>", opts)
+

@@ -64,5 +64,12 @@ return require('packer').startup(function(use)
         "jose-elias-alvarez/null-ls.nvim",
         requires = { "nvim-lua/plenary.nvim" },
     })
-    use ('vim-test/vim-test')
+    use('vim-test/vim-test')
+    use {
+        'stevearc/aerial.nvim',
+        config = function() require('aerial').setup() end
+    }
+    use { 'github/copilot.vim' }
+    use { 'windwp/nvim-ts-autotag' }
+    use({ 'scalameta/nvim-metals', requires = { "nvim-lua/plenary.nvim" } })
 end)
